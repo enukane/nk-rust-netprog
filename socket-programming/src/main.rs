@@ -8,7 +8,7 @@ mod udp_client;
 mod udp_server;
 
 fn main() {
-    env::set_var ("RUST_L+OG", "debug");
+    env::set_var ("RUST_LOG", "debug");
     env_logger::init();
     let args: Vec<String> = env::args().collect();
     if args.len() != 4 {
